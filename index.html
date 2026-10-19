@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peelabee — Çocuklar için çıkartma dükkânı ve moda stüdyosu</title>
+<meta name="description" content="Peelabee'de çocuklar bir çıkartma dükkânı ve bir moda stüdyosu işletir. Müşterilerin isteklerini kendi tasarımlarıyla karşılarlar. Hesap yok, kayıt yok, sunucu yok: bütün kontrol ebeveynde.">
+<meta property="og:title" content="Peelabee — Müşteriler geliyor, tasarım senden">
+<meta property="og:description" content="Çocuklar için çıkartma dükkânı ve moda stüdyosu. Hesap yok, sunucu yok, bütün kontrol ebeveynde.">
+<meta property="og:image" content="https://peelabee.com/img/og.png">
+<meta property="og:url" content="https://peelabee.com/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FFF3E8">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<style>
+@font-face{font-family:"Baloo 2";font-style:normal;font-weight:700;font-display:swap;src:url(fonts/baloo-2-latin-ext-700-normal.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Baloo 2";font-style:normal;font-weight:700;font-display:swap;src:url(fonts/baloo-2-latin-700-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Baloo 2";font-style:normal;font-weight:800;font-display:swap;src:url(fonts/baloo-2-latin-ext-800-normal.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Baloo 2";font-style:normal;font-weight:800;font-display:swap;src:url(fonts/baloo-2-latin-800-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Nunito";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/nunito-latin-ext-600-normal.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Nunito";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/nunito-latin-600-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Nunito";font-style:normal;font-weight:700;font-display:swap;src:url(fonts/nunito-latin-ext-700-normal.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Nunito";font-style:normal;font-weight:700;font-display:swap;src:url(fonts/nunito-latin-700-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Nunito";font-style:normal;font-weight:800;font-display:swap;src:url(fonts/nunito-latin-ext-800-normal.woff2) format("woff2");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Nunito";font-style:normal;font-weight:800;font-display:swap;src:url(fonts/nunito-latin-800-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{
+  --peach:#FFF3E8;      /* uygulamanın zemini */
+  --mint:#D3F1E1;
+  --leaf:#1E7A55;
+  --leaf-deep:#155C40;
+  --tangerine:#FF8A3D;
+  --honey:#FFC93C;
+  --bubble:#FF6FA5;
+  --sky:#7CC4FF;
+  --ink:#3B2416;        /* logonun kahvesi */
+  --ink-soft:#6E5444;
+  --white:#FFFFFF;
+  --r-lg:34px; --r-md:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--peach);color:var(--ink);font:600 18px/1.6 Nunito,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--tangerine);outline-offset:3px;border-radius:8px}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:"Baloo 2",Nunito,sans-serif;line-height:1.05;margin:0;letter-spacing:-.01em}
+p{margin:0}
+
+/* sticker: beyaz kesim payı + gölge — sayfanın imzası */
+.sticker{filter:drop-shadow(0 0 0 #fff) drop-shadow(3px 0 0 #fff) drop-shadow(-3px 0 0 #fff) drop-shadow(0 3px 0 #fff) drop-shadow(0 -3px 0 #fff) drop-shadow(0 10px 14px rgba(59,36,22,.18))}
+
+/* üst çubuk */
+.top{position:sticky;top:0;z-index:20;background:rgba(255,243,232,.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.top .wrap{display:flex;align-items:center;gap:20px;height:72px}
+.top .logo img{height:44px;width:auto}
+.top nav{margin-left:auto;display:flex;gap:6px;align-items:center}
+.top nav a{text-decoration:none;font-weight:800;font-size:16px;padding:8px 14px;border-radius:99px}
+.top nav a:hover{background:var(--white)}
+.lang{display:flex;background:var(--white);border-radius:99px;padding:4px;box-shadow:inset 0 0 0 2px #F3E2D2}
+.lang button{border:0;background:none;font:800 14px Nunito;color:var(--ink-soft);padding:6px 12px;border-radius:99px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--white)}
+@media (max-width:760px){.top nav a{display:none}.top .logo img{height:36px}}
+
+/* hero */
+.hero{position:relative;padding:44px 0 90px}
+.hero .wrap{display:grid;grid-template-columns:1.02fr 1fr;gap:28px;align-items:center}
+.hero h1{font-size:clamp(46px,6.4vw,86px);font-weight:800;color:var(--ink);paint-order:stroke;-webkit-text-stroke:0}
+.hero h1 .l2{display:block;color:var(--tangerine);-webkit-text-stroke:10px var(--white);paint-order:stroke fill;filter:drop-shadow(0 8px 0 rgba(59,36,22,.12))}
+.hero .lede{margin-top:22px;font-size:20px;max-width:30em;color:var(--ink-soft);font-weight:600}
+.badges{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-top:30px}
+.badge{position:relative;display:inline-block}
+.badge img{height:56px;width:auto}
+.badge.gp img{height:56px}
+.badge .soon{position:absolute;top:-11px;right:-8px;background:var(--honey);color:var(--ink);font:800 12px/1 Nunito;padding:5px 9px;border-radius:99px;box-shadow:0 2px 0 rgba(59,36,22,.15);white-space:nowrap}
+.badges .note{flex-basis:100%;font-size:15px;color:var(--ink-soft);font-weight:700}
+
+.stage{position:relative;aspect-ratio:1/1;max-width:600px;justify-self:center;width:100%}
+.stage .disc{position:absolute;inset:6% 4% 2% 4%;border-radius:50%;background:radial-gradient(circle at 50% 42%,#E6F8EE 0 55%,var(--mint) 56%)}
+.stage .ch{position:absolute;bottom:4%}
+.stage .mia{left:4%;width:50%}
+.stage .bee{position:absolute;right:0;bottom:8%;width:34%;transform:rotate(6deg);animation:hover 4.5s ease-in-out infinite}
+@keyframes hover{50%{transform:rotate(4deg) translateY(-10px)}}
+.wish{position:absolute;left:54%;top:6%;width:36%;background:var(--white);border-radius:28px;padding:14px 14px 12px;box-shadow:0 10px 24px rgba(59,36,22,.12);text-align:center}
+.wish:after{content:"";position:absolute;left:4%;bottom:-14px;width:22px;height:22px;background:var(--white);border-radius:50%;box-shadow:0 6px 10px rgba(59,36,22,.08)}
+.wish:before{content:"";position:absolute;left:-6%;bottom:-30px;width:12px;height:12px;background:var(--white);border-radius:50%}
+.wish img{width:62%;margin:0 auto}
+.wish span{display:block;font:800 15px/1.2 Nunito;margin-top:4px}
+.stars{position:absolute;left:22%;bottom:-2%;display:flex;gap:4px;background:var(--white);padding:8px 14px;border-radius:99px;box-shadow:0 8px 18px rgba(59,36,22,.14)}
+.stars img{width:40px}
+.stars img:nth-child(2){transform:translateY(-6px)}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr}.hero{padding-bottom:60px}.stage{max-width:480px}}
+
+/* bölüm başlıkları */
+section{padding:96px 0}
+.sh{max-width:780px}
+.sh h2{font-size:clamp(36px,4.6vw,58px);font-weight:800}
+.sh p{margin-top:14px;font-size:19px;color:var(--ink-soft);font-weight:600;max-width:36em}
+
+/* nasıl oynanır: gerçek sıra (1-2-3) */
+.how{background:var(--white);border-radius:var(--r-lg) var(--r-lg) 0 0;position:relative}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px;counter-reset:s}
+.step{background:var(--peach);border-radius:var(--r-md);padding:26px 24px 28px;position:relative}
+.step .n{width:46px;height:46px;border-radius:50%;background:var(--ink);color:var(--white);display:grid;place-items:center;font:800 22px "Baloo 2"}
+.step h3{font-size:26px;margin-top:16px}
+.step p{margin-top:8px;color:var(--ink-soft);font-weight:600}
+.step img.ic{position:absolute;right:16px;top:14px;width:84px}
+.score{margin-top:38px;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-radius:var(--r-md);overflow:hidden;box-shadow:inset 0 0 0 2px #F3E2D2}
+.score div{padding:18px 20px;display:flex;gap:14px;align-items:center;font-weight:700}
+.score div+div{border-left:2px solid #F3E2D2}
+.score .st{display:flex;gap:2px;flex:none}
+.score .st img{width:24px}
+.score .st img.off{opacity:.18;filter:grayscale(1)}
+.score div:last-child{background:#FFF7DC}
+@media (max-width:860px){.steps,.score{grid-template-columns:1fr}.score div+div{border-left:0;border-top:2px solid #F3E2D2}}
+
+/* iki oda */
+.rooms{background:var(--white);padding-top:20px}
+.room{display:grid;grid-template-columns:1fr 1.25fr;gap:48px;align-items:center;margin-top:56px}
+.room.flip{grid-template-columns:1.25fr 1fr}
+.room.flip .txt{order:2}
+.room h3{font-size:clamp(30px,3.4vw,42px)}
+.room .txt p{margin-top:12px;color:var(--ink-soft);font-weight:600;font-size:18px}
+.room .txt ul{margin:18px 0 0;padding:0;list-style:none;display:grid;gap:8px}
+.room .txt li{padding-left:30px;position:relative;font-weight:700}
+.room .txt li:before{content:"";position:absolute;left:0;top:.38em;width:18px;height:18px;border-radius:6px;background:var(--mint);box-shadow:inset 0 0 0 5px var(--leaf)}
+.room .ico{width:120px;margin-bottom:8px}
+.tablet{border-radius:30px;background:#2B2B2E;padding:14px;box-shadow:0 30px 60px -20px rgba(59,36,22,.35)}
+.tablet img{border-radius:18px;width:100%;aspect-ratio:1180/820;object-fit:cover}
+@media (max-width:860px){.room,.room.flip{grid-template-columns:1fr;gap:24px}.room.flip .txt{order:0}}
+
+/* ebeveynler: sayfanın koyu bandı */
+.parents{background:var(--leaf);color:var(--white);border-radius:var(--r-lg);margin:0 14px;position:relative;overflow:hidden}
+.parents .sh p{color:#D9F2E6}
+.parents .sh h2{color:var(--white)}
+.parents .lock{position:absolute;right:5%;top:56px;width:150px;transform:rotate(-8deg)}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:46px}
+.pc{background:var(--leaf-deep);border-radius:var(--r-md);padding:22px 22px 24px}
+.pc h3{font-size:23px;color:var(--white)}
+.pc p{margin-top:6px;color:#CDEBDD;font-weight:600;font-size:17px}
+.pc.wide{grid-column:span 2}
+.pc.big{grid-column:span 2;background:var(--white);color:var(--ink)}
+.pc.big h3{color:var(--ink);font-size:30px}
+.pc.big p{color:var(--ink-soft);font-size:18px}
+.nolist{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.nolist span{background:var(--peach);border-radius:99px;padding:8px 16px;font-weight:800;font-size:16px}
+.nolist span:before{content:"✕";color:var(--bubble);margin-right:8px;font-weight:900}
+@media (max-width:860px){.pgrid{grid-template-columns:1fr}.pc.big,.pc.wide{grid-column:auto}.parents .lock{width:70px;top:22px;right:22px}.parents .sh{padding-top:46px}}
+
+/* yaklaşım */
+.why .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.why .cast{position:relative;height:520px}
+.why .cast img{position:absolute;bottom:0}
+.why .cast .a{left:0;width:30%}
+.why .cast .b{left:22%;width:28%;bottom:4%}
+.why .cast .c{left:46%;width:34%}
+.why .cast .d{right:0;width:24%;bottom:2%}
+.quote{font:800 clamp(30px,3.6vw,46px)/1.12 "Baloo 2";}
+.why p.body{margin-top:18px;font-size:19px;color:var(--ink-soft);font-weight:600}
+.why p.body+p.body{margin-top:12px}
+@media (max-width:860px){.why .wrap{grid-template-columns:1fr}.why .cast{height:320px;order:2}}
+
+/* son çağrı */
+.end{text-align:center;padding:40px 0 100px}
+.end .bee{width:150px;margin:0 auto}
+.end h2{font-size:clamp(34px,4.4vw,54px);margin-top:10px}
+.end .badges{justify-content:center}
+
+footer{background:var(--ink);color:#EADBCF;padding:40px 0;font-size:16px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center}
+footer a{color:var(--white);font-weight:800;text-decoration:none}
+footer a:hover{text-decoration:underline}
+footer .sp{margin-left:auto}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="Peelabee"><img src="img/logo.webp" alt="Peelabee" width="900" height="306"></a>
+    <nav aria-label="Menü">
+      <a href="#nasil" data-i="nav1">Nasıl oynanır</a>
+      <a href="#ebeveyn" data-i="nav2">Ebeveynler için</a>
+      <div class="lang" role="group" aria-label="Dil / Language">
+        <button type="button" data-l="tr" aria-pressed="true">TR</button>
+        <button type="button" data-l="en" aria-pressed="false">EN</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1><span data-i="h1a">Müşteriler geliyor.</span><span class="l2" data-i="h1b">Tasarım senden.</span></h1>
+      <p class="lede" data-i="lede">Peelabee'de çocuklar bir çıkartma dükkânı ve bir moda stüdyosu işletir. Her müşterinin bir isteği vardır; çocuk o isteği kendi fikirleriyle karşılar.</p>
+      <div class="badges">
+        <span class="badge gp"><img class="gpb" src="badges/gp-tr.svg" alt="Google Play'den alın" width="180" height="53"><span class="soon" data-i="soon">Yakında</span></span>
+        <span class="badge"><img src="badges/appstore.svg" alt="Download on the App Store" width="168" height="56"><span class="soon" data-i="soon">Yakında</span></span>
+        <span class="note" data-i="age">3–10 yaş · tablet ve telefon</span>
+      </div>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="disc"></div>
+      <img class="ch mia sticker" src="img/c-mia.webp" alt="" width="460" height="747">
+      <div class="wish"><img src="img/elbise.webp" alt="" width="360" height="360"><span data-i="wish">Prenses elbisesi istiyorum!</span></div>
+      <div class="stars"><img src="img/yildiz.webp" alt=""><img src="img/yildiz.webp" alt=""><img src="img/yildiz.webp" alt=""></div>
+      <img class="bee sticker" src="img/beebee.webp" alt="" width="407" height="471">
+    </div>
+  </div>
+</section>
+
+<section class="how" id="nasil">
+  <div class="wrap">
+    <div class="sh">
+      <h2 data-i="howH">Bir oyun değil, küçük bir iş yeri</h2>
+      <p data-i="howP">Her gün kapıdan yeni müşteriler girer. Çocuk onları dinler, isteklerini anlar ve işini bitirir. Okuma bilmeyenler için istekler resimle ve sesle anlatılır.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><img class="ic" src="img/dukkan.webp" alt="" width="357" height="360"><div class="n">1</div><h3 data-i="s1h">Müşteri gelir</h3><p data-i="s1p">Düşünce balonunda ne istediği yazar ve çizilir: bir kalp çıkartması, kışlık bir mont, en sevdiği renk.</p></div>
+      <div class="step"><img class="ic" src="img/palet.webp" alt="" width="360" height="326"><div class="n">2</div><h3 data-i="s2h">Çocuk tasarlar</h3><p data-i="s2p">Çıkartmaları yerleştirir, kıyafetleri seçer, renk ve desen verir. Hazır şablon yok, her tasarım onun.</p></div>
+      <div class="step"><img class="ic" src="img/yildiz.webp" alt="" width="360" height="353"><div class="n">3</div><h3 data-i="s3h">Müşteri puan verir</h3><p data-i="s3p">Yıldızlar çocuğun ne kadar özen gösterdiğini söyler, ne kadar hızlı olduğunu değil.</p></div>
+    </div>
+    <div class="score" role="list">
+      <div role="listitem"><span class="st"><img src="img/yildiz.webp" alt=""><img class="off" src="img/yildiz.webp" alt=""><img class="off" src="img/yildiz.webp" alt=""></span><span data-i="r1">İstenen şey yok</span></div>
+      <div role="listitem"><span class="st"><img src="img/yildiz.webp" alt=""><img src="img/yildiz.webp" alt=""><img class="off" src="img/yildiz.webp" alt=""></span><span data-i="r2">Yalnızca istenen var</span></div>
+      <div role="listitem"><span class="st"><img src="img/yildiz.webp" alt=""><img src="img/yildiz.webp" alt=""><img src="img/yildiz.webp" alt=""></span><span data-i="r3">İstenen var ve çocuk kendinden bir şey katmış</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="rooms">
+  <div class="wrap">
+    <div class="room">
+      <div class="txt">
+        <img class="ico" src="img/cikartma.webp" alt="" width="360" height="298">
+        <h3 data-i="r1h">Çıkartma dükkânı</h3>
+        <p data-i="r1p">Yüzlerce çizim, renk ve şekille çıkartmalar tasarlanır. Bitince kâğıda basılıp gerçekten yapıştırılır.</p>
+        <ul><li data-i="r1a">Çizimleri büyüt, döndür, üst üste koy</li><li data-i="r1b">Zemin şekli ve rengi seç</li><li data-i="r1c">A4 kâğıda ya da PDF olarak yazdır</li></ul>
+      </div>
+      <div class="tablet"><img src="img/app-shop.webp" alt="Çıkartma dükkânı: çizimler ve tasarım alanı" data-ia="altHome" loading="lazy" width="1600" height="1112"></div>
+    </div>
+    <div class="room flip">
+      <div class="txt">
+        <img class="ico" src="img/askilik.webp" alt="" width="360" height="311">
+        <h3 data-i="r2h">Moda stüdyosu</h3>
+        <p data-i="r2p">Yirmi karakter, kategori başına on parça kıyafet, aksesuar ve oyuncak. Her parça istenen renge boyanır, desen eklenir.</p>
+        <ul><li data-i="r2a">Üst, ceket, etek, pantolon, elbise, ayakkabı</li><li data-i="r2b">Şapka, gözlük, çanta ve oyuncaklar</li><li data-i="r2c">Kâğıt bebek olarak yazdırılabilir</li></ul>
+      </div>
+      <div class="tablet"><img src="img/app-studio.webp" alt="Moda stüdyosu: karakter ve kıyafet seçimi" data-ia="altStudio" loading="lazy" width="1600" height="1112"></div>
+    </div>
+  </div>
+</section>
+
+<section class="parents" id="ebeveyn">
+  <img class="lock sticker" src="img/kilit.webp" alt="" width="360" height="360">
+  <div class="wrap">
+    <div class="sh">
+      <h2 data-i="pH">Bütün kontrol sizde</h2>
+      <p data-i="pP">Peelabee kapalı bir kutudur. Çocuğunuzun yaptığı her şey yalnızca sizin cihazınızda kalır.</p>
+    </div>
+    <div class="pgrid">
+      <div class="pc big">
+        <h3 data-i="b1h">Hesap, kayıt ve sunucu yok</h3>
+        <p data-i="b1p">E-posta istemiyoruz, profil açtırmıyoruz, hiçbir veriyi bir sunucuya göndermiyoruz. Uygulama internet olmadan çalışır.</p>
+        <div class="nolist"><span data-i="n1">Hesap</span><span data-i="n2">Kayıt</span><span data-i="n3">Sunucu</span><span data-i="n4">Sohbet</span></div>
+      </div>
+      <div class="pc"><h3 data-i="c1h">Paylaşım sizin kararınız</h3><p data-i="c1p">Bir tasarımı paylaşmak isterseniz onu resim olarak siz kaydeder, siz paylaşırsınız. Paylaşılan tek şey çocuğunuzun tasarımıdır.</p></div>
+      <div class="pc"><h3 data-i="c2h">Ebeveyn kapısı</h3><p data-i="c2p">Ayarlar küçük bir matematik sorusunun arkasında durur.</p></div>
+      <div class="pc"><h3 data-i="c3h">Günlük baskı sınırı</h3><p data-i="c3p">Günde kaç baskı yapılacağını siz seçersiniz. Sınıra gelince Beebee yarını beklemeyi hatırlatır.</p></div>
+      <div class="pc"><h3 data-i="c4h">Uyku vakti</h3><p data-i="c4p">Belirlediğiniz saatte dükkân kapanır, Beebee iyi geceler der.</p></div>
+      <div class="pc"><h3 data-i="c5h">Beş kardeş profili</h3><p data-i="c5p">Her çocuğun albümü ve siparişleri ayrı tutulur. Yedeği kendi telefonunuza alır, yine oradan yüklersiniz.</p></div>
+      <div class="pc wide"><h3 data-i="c6h">Okumayan çocuklar için</h3><p data-i="c6p">Resimli mod ve telefonun dilinde sesli anlatım: Beebee isteği yüksek sesle söyler.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="cast" aria-hidden="true">
+      <img class="a sticker" src="img/c-lina.webp" alt="" width="257" height="753">
+      <img class="b sticker" src="img/c-kai.webp" alt="" width="263" height="747">
+      <img class="c sticker" src="img/c-zoe.webp" alt="" width="330" height="708">
+      <img class="d sticker" src="img/c-ali.webp" alt="" width="370" height="727">
+    </div>
+    <div>
+      <p class="quote" data-i="qH">Çocuğu oyalamıyoruz. Yaratıcılığını ve sorumluluğunu büyütüyoruz.</p>
+      <p class="body" data-i="q1">Peelabee'de müşteriyi dinlemek, isteğini anlamak ve işi bitirip teslim etmek önemlidir. Her gün yeni siparişler gelir; çocuk onları tek tek tamamlar.</p>
+      <p class="body" data-i="q2">Üç yıldız, isteneni yapmakla değil, ona kendinden bir şey katmakla kazanılır. Çocuk kendi fikrinin değerli olduğunu böyle öğrenir.</p>
+    </div>
+  </div>
+</section>
+
+<section class="end">
+  <div class="wrap">
+    <img class="bee sticker" src="img/beebee.webp" alt="" width="407" height="471">
+    <h2 data-i="eH">Dükkân yakında açılıyor</h2>
+    <div class="badges">
+      <span class="badge gp"><img class="gpb" src="badges/gp-tr.svg" alt="Google Play'den alın" width="180" height="53"><span class="soon" data-i="soon">Yakında</span></span>
+      <span class="badge"><img src="badges/appstore.svg" alt="Download on the App Store" width="168" height="56"><span class="soon" data-i="soon">Yakında</span></span>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Swiff</span>
+    <a href="privacy.html" data-i="fP">Gizlilik</a>
+    <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a>
+    <span class="sp" data-i="fM">İstanbul'da sevgiyle yapıldı</span>
+  </div>
+</footer>
+
+<script>
+const EN={
+ nav1:"How it works",nav2:"For parents",
+ h1a:"Customers are coming.",h1b:"The design is yours.",
+ lede:"In Peelabee, kids run a sticker shop and a fashion studio. Every customer has a wish, and the child meets it with ideas of their own.",
+ soon:"Coming soon",age:"Ages 3–10 · tablet and phone",wish:"I want a princess dress!",
+ howH:"Not just a game, a little workshop",howP:"New customers walk in every day. The child listens, works out what they want and finishes the job. For kids who can't read yet, wishes are shown in pictures and spoken aloud.",
+ s1h:"A customer arrives",s1p:"A thought bubble shows what they want: a heart sticker, a winter coat, their favourite colour.",
+ s2h:"The child designs",s2p:"Places stickers, picks clothes, adds colours and patterns. No ready-made templates, every design is their own.",
+ s3h:"The customer rates it",s3p:"Stars reward how much care went into the work, not how fast it was done.",
+ r1:"The wish is missing",r2:"Only what was asked for",r3:"What was asked, plus something of their own",
+ r1h:"Sticker shop",r1p:"Hundreds of drawings, colours and shapes for designing stickers. When it's done, print it on paper and really stick it.",
+ r1a:"Resize, rotate and layer drawings",r1b:"Pick a background shape and colour",r1c:"Print on A4 paper or save as PDF",
+ r2h:"Fashion studio",r2p:"Twenty characters, ten pieces in every clothing category, accessories and toys. Every piece can be recoloured and patterned.",
+ r2a:"Tops, jackets, skirts, trousers, dresses, shoes",r2b:"Hats, glasses, bags and toys",r2c:"Printable as a paper doll",
+ pH:"You're in control",pP:"Peelabee is a closed box. Everything your child makes stays on your own device.",
+ b1h:"No accounts, no sign-up, no servers",b1p:"We don't ask for an email, we don't create profiles, and we don't send any data to a server. The app works offline.",
+ n1:"Accounts",n2:"Sign-up",n3:"Servers",n4:"Chat",
+ c1h:"Sharing is your call",c1p:"If you want to share a design, you save it as an image and you share it. The only thing ever shared is your child's design.",
+ c2h:"Parent gate",c2p:"Settings sit behind a small maths question.",
+ c3h:"Daily print limit",c3p:"You choose how many prints a day. When the limit is reached, Beebee reminds them to wait until tomorrow.",
+ c4h:"Bedtime",c4p:"At the time you set, the shop closes and Beebee says good night.",
+ c5h:"Five sibling profiles",c5p:"Each child keeps their own album and orders. Backups are saved to your own phone and restored from there.",
+ c6h:"For kids who can't read yet",c6p:"Picture mode and voice guidance in your phone's language: Beebee reads each wish aloud.",
+ qH:"We don't just keep kids busy. We help their creativity and responsibility grow.",
+ q1:"In Peelabee, listening to the customer, understanding the wish and delivering the finished work matter. New orders arrive every day, and the child completes them one by one.",
+ q2:"Three stars aren't earned by doing what was asked, but by adding something of your own. That's how a child learns their ideas are worth something.",
+ eH:"The shop opens soon",fP:"Privacy",fM:"Made with love in Istanbul",
+ altHome:"Sticker shop: drawings and the design area",altStudio:"Fashion studio: character and outfit choices"
+};
+const TR={};
+document.querySelectorAll('[data-i]').forEach(e=>TR[e.dataset.i]=e.textContent);
+document.querySelectorAll('[data-ia]').forEach(e=>TR[e.dataset.ia]=e.alt);
+const META={tr:{t:document.title,gp:"badges/gp-tr.svg",gpa:"Google Play'den alın"},en:{t:"Peelabee — A sticker shop and fashion studio for kids",gp:"badges/gp-en.svg",gpa:"Get it on Google Play"}};
+function setLang(l){
+  const D=l==="en"?EN:TR;
+  document.documentElement.lang=l;
+  document.querySelectorAll('[data-i]').forEach(e=>{const v=D[e.dataset.i]; if(v) e.textContent=v;});
+  document.querySelectorAll('[data-ia]').forEach(e=>{const v=D[e.dataset.ia]; if(v) e.alt=v;});
+  document.querySelectorAll('.gpb').forEach(e=>{e.src=META[l].gp;e.alt=META[l].gpa;});
+  document.title=META[l].t;
+  document.querySelectorAll('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===l));
+  try{localStorage.setItem('pb-lang',l)}catch(e){}
+}
+document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.l)));
+let pref=null; try{pref=localStorage.getItem('pb-lang')}catch(e){}
+setLang(pref || ((navigator.language||"").toLowerCase().startsWith("tr")?"tr":"en"));
+</script>
+</body>
+</html>
