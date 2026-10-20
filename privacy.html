@@ -29,13 +29,20 @@ p,li{color:var(--soft)}
 a{color:var(--leaf);font-weight:800}
 :focus-visible{outline:3px solid #FF8A3D;outline-offset:3px;border-radius:6px}
 [hidden]{display:none}
+.lang{position:relative;display:inline-flex;align-items:center;background:var(--white);border-radius:99px;box-shadow:inset 0 0 0 2px #F3E2D2}
+.lang select{appearance:none;-webkit-appearance:none;border:0;background:transparent;font:800 14px Nunito,system-ui,sans-serif;color:var(--ink);padding:8px 34px 8px 16px;border-radius:99px;cursor:pointer;max-width:170px}
+.lang::after{content:"";position:absolute;right:14px;top:50%;width:7px;height:7px;border-right:2.5px solid var(--ink);border-bottom:2.5px solid var(--ink);transform:translateY(-70%) rotate(45deg);pointer-events:none}
+[dir="rtl"] .lang select{padding:8px 16px 8px 34px}[dir="rtl"] .lang::after{right:auto;left:14px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+html[lang="ar"] body,html[lang="fa"] body,html[lang="hi"] body,html[lang="th"] body,html[lang="zh"] body,html[lang="ja"] body,html[lang="ko"] body,html[lang="el"] body{font-family:Nunito,system-ui,"Noto Sans",sans-serif}
+
 </style>
 </head>
 <body>
 <div class="wrap">
 <header>
   <a href="index.html"><img src="img/logo.webp" alt="Peelabee"></a>
-  <nav aria-label="Dil / Language"><button type="button" data-l="tr" aria-pressed="true">TR</button><button type="button" data-l="en" aria-pressed="false">EN</button></nav>
+  <nav aria-label="Dil / Language"><label class="lang"><span class="sr">Dil / Language</span><select id="langSel" aria-label="Dil / Language"><option value="tr" lang="tr">Türkçe</option><option value="en" lang="en">English</option><option value="de" lang="de">Deutsch</option><option value="fr" lang="fr">Français</option><option value="es" lang="es">Español</option><option value="it" lang="it">Italiano</option><option value="pt" lang="pt">Português</option><option value="ru" lang="ru">Русский</option><option value="uk" lang="uk">Українська</option><option value="pl" lang="pl">Polski</option><option value="ro" lang="ro">Română</option><option value="nl" lang="nl">Nederlands</option><option value="el" lang="el">Ελληνικά</option><option value="sq" lang="sq">Shqip</option><option value="ar" lang="ar">العربية</option><option value="fa" lang="fa">فارسی</option><option value="hi" lang="hi">हिन्दी</option><option value="th" lang="th">ไทย</option><option value="id" lang="id">Bahasa Indonesia</option><option value="vi" lang="vi">Tiếng Việt</option><option value="zh" lang="zh">中文</option><option value="ja" lang="ja">日本語</option><option value="ko" lang="ko">한국어</option></select></label></nav>
 </header>
 
 <article lang="tr" data-lang="tr">
@@ -61,7 +68,6 @@ a{color:var(--leaf);font-weight:800}
 <h2>İletişim</h2>
 <p>Sorularınız için: <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a></p>
 </article>
-
 <article lang="en" data-lang="en" hidden>
 <h1>Privacy</h1>
 <p class="date">Last updated: 19 October 2026</p>
@@ -85,12 +91,498 @@ a{color:var(--leaf);font-weight:800}
 <h2>Contact</h2>
 <p>For questions: <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a></p>
 </article>
+<article lang="de" data-lang="de" hidden>
+<h1>Datenschutz</h1>
+<p class="date">Zuletzt aktualisiert: 19. Oktober 2026</p>
+<p>Peelabee ist eine Kreativ-App für Kinder von Swiff. Diese Seite erklärt verständlich, welche Informationen die App verwendet.</p>
+<h2>Kurz gesagt</h2>
+<ul>
+<li>Kein Konto, keine Anmeldung, es wird weder nach einer E-Mail-Adresse noch nach einem Namen gefragt.</li>
+<li>Nichts, was in der App passiert, wird an uns oder an einen anderen Server gesendet.</li>
+<li>In der App gibt es keinen Chat, keine Nachrichten und keinen Kontakt zu anderen Nutzern.</li>
+</ul>
+<h2>Was auf Ihrem Gerät bleibt</h2>
+<p>Profile (ein Profilname und die gewählte Figur), Designs, das Album, die Sterne und die Elterneinstellungen werden ausschließlich auf Ihrem Gerät gespeichert. Wenn Sie die App löschen, werden auch diese Daten gelöscht. Mit „Alles zurücksetzen“ können Sie jederzeit selbst alles löschen.</p>
+<h2>Sicherungen, Speichern und Teilen</h2>
+<p>Eine Sicherungsdatei wird nur dann erstellt, wenn Sie es möchten, und an einem Ort auf Ihrem Gerät gespeichert, den Sie selbst wählen. Ob Sie ein Design als Bild oder PDF speichern und teilen, entscheiden allein Sie; dafür werden die gewohnten Speicher- und Teilen-Funktionen Ihres Geräts genutzt. Geteilt wird nur das Design, das Sie auswählen.</p>
+<h2>Sprachausgabe</h2>
+<p>Beebee spricht über die integrierte Sprachausgabe Ihres Geräts, in der Sprache Ihres Geräts.</p>
+<h2>Drucken</h2>
+<p>Gedruckt wird über die Druckfunktion Ihres Geräts oder über einen Drucker, den Sie verbinden. Ein Design wird nur an diesen Drucker gesendet.</p>
+<h2>Diese Website</h2>
+<p>peelabee.com verwendet keine Cookies, enthält keine Formulare und verfolgt keine Besucher. Schriften und Bilder werden direkt von der Website selbst geladen.</p>
+<h2>Kontakt</h2>
+<p>Bei Fragen: <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a></p>
+</article>
+<article lang="fr" data-lang="fr" hidden>
+<h1>Confidentialité</h1>
+<p class="date">Dernière mise à jour&nbsp;: 19&nbsp;octobre 2026</p>
+<p>Peelabee est une application créative pour enfants conçue par Swiff. Cette page explique simplement quelles informations l’application utilise.</p>
+<h2>En bref</h2>
+<ul>
+<li>Pas de compte, pas d’inscription, aucune adresse e-mail ni aucun nom n’est demandé.</li>
+<li>Rien de ce qui se fait dans l’application n’est envoyé chez nous ni vers un autre serveur.</li>
+<li>L’application ne comporte ni chat, ni messagerie, ni contact avec d’autres utilisateurs.</li>
+</ul>
+<h2>Ce qui reste sur votre appareil</h2>
+<p>Les profils (un nom de profil et le personnage choisi), les créations, l’album, les étoiles et les réglages parentaux sont enregistrés uniquement sur votre appareil. Si vous supprimez l’application, ils sont supprimés eux aussi. Vous pouvez tout effacer vous-même à tout moment avec «&nbsp;Tout réinitialiser&nbsp;».</p>
+<h2>Sauvegardes, enregistrement et partage</h2>
+<p>Un fichier de sauvegarde n’est créé que si vous le demandez, à l’emplacement de votre appareil que vous choisissez. Enregistrer une création en image ou en PDF, puis la partager, relève entièrement de votre décision&nbsp;; ces actions passent par les écrans d’enregistrement et de partage de votre appareil. Seule la création que vous choisissez est partagée.</p>
+<h2>Guidage vocal</h2>
+<p>Beebee parle grâce à la synthèse vocale intégrée de votre appareil, dans la langue de votre appareil.</p>
+<h2>Impression</h2>
+<p>L’impression passe par la fonction d’impression de votre appareil ou par une imprimante que vous connectez. Une création n’est envoyée qu’à cette imprimante.</p>
+<h2>Ce site web</h2>
+<p>peelabee.com n’utilise aucun cookie, ne contient aucun formulaire et ne suit pas ses visiteurs. Les polices et les images sont chargées depuis le site lui-même.</p>
+<h2>Contact</h2>
+<p>Pour toute question&nbsp;: <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a></p>
+</article>
+<article lang="es" data-lang="es" hidden>
+<h1>Privacidad</h1>
+<p class="date">Última actualización: 19 de octubre de 2026</p>
+<p>Peelabee es una app de creatividad para niños creada por Swiff. Esta página explica con claridad qué información utiliza la app.</p>
+<h2>En resumen</h2>
+<ul>
+<li>No hay cuentas ni registro, y no se pide ningún correo electrónico ni nombre.</li>
+<li>Nada de lo que se hace en la app se envía a nosotros ni a ningún otro servidor.</li>
+<li>Dentro de la app no hay chat, ni mensajes, ni contacto con otros usuarios.</li>
+</ul>
+<h2>Lo que se queda en tu dispositivo</h2>
+<p>Los perfiles (un nombre de perfil y el personaje elegido), los diseños, el álbum, las estrellas y los ajustes parentales se guardan solo en tu dispositivo. Si borras la app, también se borran. Puedes eliminarlo todo tú mismo en cualquier momento con «Restablecer todo».</p>
+<h2>Copias de seguridad, guardar y compartir</h2>
+<p>La copia de seguridad solo se crea cuando tú lo pides, y se guarda en el lugar de tu dispositivo que elijas. Guardar un diseño como imagen o PDF, y compartirlo, depende por completo de ti; para ello se usan las pantallas de guardar y compartir de tu propio dispositivo. Lo único que se comparte es el diseño que eliges.</p>
+<h2>Guía por voz</h2>
+<p>Beebee habla con la función de texto a voz integrada en tu dispositivo, en el idioma del dispositivo.</p>
+<h2>Impresión</h2>
+<p>Para imprimir se usa la función de impresión de tu dispositivo o una impresora que conectes. El diseño se envía únicamente a esa impresora.</p>
+<h2>Este sitio web</h2>
+<p>peelabee.com no usa cookies, no tiene formularios y no rastrea a los visitantes. Las fuentes y las imágenes se cargan desde el propio sitio.</p>
+<h2>Contacto</h2>
+<p>Para cualquier pregunta: <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a></p>
+</article>
+<article lang="it" data-lang="it" hidden>
+<h1>Privacy</h1>
+<p class="date">Ultimo aggiornamento: 19 ottobre 2026</p>
+<p>Peelabee è un’app creativa per bambini realizzata da Swiff. Questa pagina spiega in modo semplice quali informazioni utilizza l’app.</p>
+<h2>In breve</h2>
+<ul>
+<li>Niente account, niente registrazione, non vengono chiesti né indirizzo email né nome.</li>
+<li>Nulla di ciò che si fa nell’app viene inviato a noi o ad altri server.</li>
+<li>Nell’app non ci sono chat, messaggi o contatti con altri utenti.</li>
+</ul>
+<h2>Cosa resta sul tuo dispositivo</h2>
+<p>I profili (un nome profilo e il personaggio scelto), le creazioni, l’album, le stelle e le impostazioni per i genitori vengono salvati solo sul tuo dispositivo. Se elimini l’app, vengono eliminati anche questi dati. Puoi cancellare tutto tu stesso in qualsiasi momento con «Ripristina tutto».</p>
+<h2>Backup, salvataggio e condivisione</h2>
+<p>Un file di backup viene salvato solo quando lo richiedi, nella posizione del tuo dispositivo che scegli tu. Salvare una creazione come immagine o PDF e condividerla è una decisione solo tua; per farlo si usano le schermate di salvataggio e condivisione del tuo dispositivo. L’unica cosa condivisa è la creazione che scegli.</p>
+<h2>Guida vocale</h2>
+<p>Beebee parla tramite la sintesi vocale integrata nel tuo dispositivo, nella lingua del dispositivo.</p>
+<h2>Stampa</h2>
+<p>Per stampare si usa la funzione di stampa del tuo dispositivo o una stampante che colleghi tu. La creazione viene inviata solo a quella stampante.</p>
+<h2>Questo sito web</h2>
+<p>peelabee.com non usa cookie, non contiene moduli e non traccia i visitatori. Caratteri e immagini vengono caricati dal sito stesso.</p>
+<h2>Contatti</h2>
+<p>Per domande: <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a></p>
+</article>
+<article lang="pt" data-lang="pt" hidden>
+<h1>Privacidade</h1>
+<p class="date">Última atualização: 19 de outubro de 2026</p>
+<p>O Peelabee é um app de criatividade para crianças feito pela Swiff. Esta página explica de forma simples quais informações o app usa.</p>
+<h2>Em resumo</h2>
+<ul>
+<li>Não há contas nem cadastro, e não pedimos e-mail nem nome.</li>
+<li>Nada do que é feito no app é enviado para nós ou para qualquer outro servidor.</li>
+<li>Não existe chat, troca de mensagens ou contato com outros usuários dentro do app.</li>
+</ul>
+<h2>O que fica no seu aparelho</h2>
+<p>Os perfis (um nome de perfil e o personagem escolhido), as criações, o álbum, as estrelas e as configurações dos pais ficam salvos apenas no seu aparelho. Se você apagar o app, eles também são apagados. Você mesmo pode apagar tudo a qualquer momento com “Redefinir tudo”.</p>
+<h2>Backup, salvar e compartilhar</h2>
+<p>O arquivo de backup só é salvo quando você pede, no local do seu aparelho que você escolher. Salvar uma criação como imagem ou PDF e compartilhá-la é uma decisão totalmente sua; para isso são usadas as telas de salvar e compartilhar do próprio aparelho. A única coisa compartilhada é a criação que você escolher.</p>
+<h2>Narração por voz</h2>
+<p>Beebee fala usando o recurso de leitura em voz alta do próprio aparelho, no idioma do aparelho.</p>
+<h2>Impressão</h2>
+<p>A impressão usa o recurso de impressão do seu aparelho ou uma impressora que você conectar. A criação é enviada apenas para essa impressora.</p>
+<h2>Este site</h2>
+<p>O peelabee.com não usa cookies, não tem formulários e não rastreia visitantes. As fontes e imagens são carregadas do próprio site.</p>
+<h2>Contato</h2>
+<p>Para dúvidas: <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a></p>
+</article>
+<article lang="ru" data-lang="ru" hidden>
+<h1>Конфиденциальность</h1>
+<p class="date">Последнее обновление: 19 октября 2026 г.</p>
+<p>Peelabee создано компанией Swiff: это творческое приложение для детей. На этой странице простыми словами рассказано, какую информацию использует приложение.</p>
+<h2>Коротко</h2>
+<ul>
+<li>Нет аккаунтов и регистрации, мы не спрашиваем ни адрес электронной почты, ни имя.</li>
+<li>Ничего из того, что происходит в приложении, не отправляется ни нам, ни на какой-либо другой сервер.</li>
+<li>В приложении нет чата, сообщений и общения с другими пользователями.</li>
+</ul>
+<h2>Что остаётся на вашем устройстве</h2>
+<p>Профили (имя профиля и выбранный персонаж), работы, альбом, звёзды и родительские настройки хранятся только на вашем устройстве. Если удалить приложение, они тоже удалятся. Вы можете в любой момент сами стереть всё с помощью кнопки «Сбросить всё».</p>
+<h2>Резервные копии, сохранение и отправка</h2>
+<p>Файл резервной копии сохраняется только по вашему запросу и только в то место на вашем устройстве, которое вы выберете. Сохранять ли работу как изображение или PDF и делиться ли ею, решаете только вы; для этого используются стандартные экраны сохранения и отправки вашего устройства. Отправляется только та работа, которую вы выбрали.</p>
+<h2>Голосовые подсказки</h2>
+<p>Beebee говорит с помощью встроенного синтезатора речи вашего устройства, на языке устройства.</p>
+<h2>Печать</h2>
+<p>Для печати используется функция печати вашего устройства или подключённый вами принтер. Работа отправляется только на этот принтер.</p>
+<h2>Этот сайт</h2>
+<p>peelabee.com не использует файлы cookie, не содержит форм и не отслеживает посетителей. Шрифты и изображения загружаются с самого сайта.</p>
+<h2>Контакты</h2>
+<p>По вопросам: <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a></p>
+</article>
+<article lang="uk" data-lang="uk" hidden>
+<h1>Конфіденційність</h1>
+<p class="date">Останнє оновлення: 19 жовтня 2026 року</p>
+<p>Творчий застосунок для дітей Peelabee створила компанія Swiff. На цій сторінці ми простими словами пояснюємо, яку інформацію використовує застосунок.</p>
+<h2>Коротко</h2>
+<ul>
+<li>Жодних акаунтів і реєстрації, ми не запитуємо ні адреси електронної пошти, ні імені.</li>
+<li>Ніщо з того, що відбувається в застосунку, не надсилається ні нам, ні на будь-який інший сервер.</li>
+<li>У застосунку немає чату, повідомлень чи контакту з іншими користувачами.</li>
+</ul>
+<h2>Що залишається на вашому пристрої</h2>
+<p>Профілі (назва профілю та обраний персонаж), дизайни, альбом, зірки й батьківські налаштування зберігаються лише на вашому пристрої. Якщо видалити застосунок, вони теж зникнуть. Ви можете будь-коли самі стерти все кнопкою «Скинути все».</p>
+<h2>Резервні копії, збереження та поширення</h2>
+<p>Файл резервної копії зберігається лише тоді, коли ви про це просите, у вибране вами місце на пристрої. Зберегти дизайн як зображення чи PDF і поділитися ним вирішуєте тільки ви; для цього використовуються власні екрани збереження й надсилання вашого пристрою. Поширюється лише той дизайн, який ви оберете.</p>
+<h2>Голосові підказки</h2>
+<p>Beebee говорить за допомогою вбудованої функції синтезу мовлення вашого пристрою, мовою пристрою.</p>
+<h2>Друк</h2>
+<p>Друк виконується через функцію друку вашого пристрою або підключений вами принтер. Дизайн надсилається лише на цей принтер.</p>
+<h2>Цей вебсайт</h2>
+<p>peelabee.com не використовує файли cookie, не має форм і не відстежує відвідувачів. Шрифти й зображення завантажуються із самого сайту.</p>
+<h2>Контакти</h2>
+<p>З питаннями пишіть: <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a></p>
+</article>
+<article lang="pl" data-lang="pl" hidden>
+<h1>Prywatność</h1>
+<p class="date">Ostatnia aktualizacja: 19 października 2026 r.</p>
+<p>Peelabee to kreatywna aplikacja dla dzieci stworzona przez Swiff. Na tej stronie w prosty sposób wyjaśniamy, z jakich informacji korzysta aplikacja.</p>
+<h2>W skrócie</h2>
+<ul>
+<li>Nie ma kont ani rejestracji, nie prosimy o adres e-mail ani imię.</li>
+<li>Nic, co dzieje się w aplikacji, nie jest wysyłane do nas ani na żaden inny serwer.</li>
+<li>W aplikacji nie ma czatu, wiadomości ani kontaktu z innymi użytkownikami.</li>
+</ul>
+<h2>Co zostaje na Twoim urządzeniu</h2>
+<p>Profile (nazwa profilu i wybrana postać), projekty, album, gwiazdki i ustawienia rodzicielskie są przechowywane wyłącznie na Twoim urządzeniu. Usunięcie aplikacji usuwa także je. W każdej chwili możesz samodzielnie wszystko wymazać przyciskiem „Zresetuj wszystko”.</p>
+<h2>Kopie zapasowe, zapisywanie i udostępnianie</h2>
+<p>Plik kopii zapasowej jest zapisywany tylko wtedy, gdy o to poprosisz, w wybranym przez Ciebie miejscu na urządzeniu. Zapisanie projektu jako obrazu lub pliku PDF i udostępnienie go to wyłącznie Twoja decyzja; służą do tego wbudowane ekrany zapisywania i udostępniania Twojego urządzenia. Udostępniany jest tylko projekt, który wybierzesz.</p>
+<h2>Podpowiedzi głosowe</h2>
+<p>Beebee mówi dzięki wbudowanej w Twoje urządzenie funkcji zamiany tekstu na mowę, w języku urządzenia.</p>
+<h2>Drukowanie</h2>
+<p>Drukowanie odbywa się za pomocą funkcji drukowania Twojego urządzenia lub podłączonej przez Ciebie drukarki. Projekt trafia wyłącznie do tej drukarki.</p>
+<h2>Ta strona internetowa</h2>
+<p>peelabee.com nie używa plików cookie, nie ma formularzy i nie śledzi odwiedzających. Czcionki i obrazy ładują się bezpośrednio z tej strony.</p>
+<h2>Kontakt</h2>
+<p>W razie pytań: <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a></p>
+</article>
+<article lang="ro" data-lang="ro" hidden>
+<h1>Confidențialitate</h1>
+<p class="date">Ultima actualizare: 19 octombrie 2026</p>
+<p>Peelabee este o aplicație de creativitate pentru copii, realizată de Swiff. Această pagină explică pe înțelesul tuturor ce informații folosește aplicația.</p>
+<h2>Pe scurt</h2>
+<ul>
+<li>Nu există conturi și nici înregistrare; nu cerem adresă de e-mail sau nume.</li>
+<li>Nimic din ce se face în aplicație nu ne este trimis nouă sau vreunui alt server.</li>
+<li>În aplicație nu există chat, mesaje sau contact cu alți utilizatori.</li>
+</ul>
+<h2>Ce rămâne pe dispozitivul tău</h2>
+<p>Profilurile (numele profilului și personajul ales), designurile, albumul, stelele și setările pentru părinți sunt stocate doar pe dispozitivul tău. Dacă ștergi aplicația, se șterg și ele. Poți șterge oricând totul chiar tu, cu „Resetează tot”.</p>
+<h2>Copii de rezervă, salvare și distribuire</h2>
+<p>Un fișier de rezervă se salvează doar când îl ceri tu, într-un loc de pe dispozitiv pe care îl alegi. Salvarea unui design ca imagine sau PDF și distribuirea lui sunt în întregime decizia ta; pentru asta se folosesc ecranele de salvare și distribuire ale dispozitivului tău. Singurul lucru distribuit este designul pe care îl alegi.</p>
+<h2>Ghidaj vocal</h2>
+<p>Beebee vorbește prin funcția de redare vocală a textului integrată în dispozitivul tău, în limba dispozitivului.</p>
+<h2>Tipărire</h2>
+<p>Tipărirea se face prin funcția de tipărire a dispozitivului tău sau printr-o imprimantă pe care o conectezi tu. Designul este trimis doar către acea imprimantă.</p>
+<h2>Acest site</h2>
+<p>peelabee.com nu folosește cookie-uri, nu are formulare și nu urmărește vizitatorii. Fonturile și imaginile se încarcă direct de pe site.</p>
+<h2>Contact</h2>
+<p>Pentru întrebări: <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a></p>
+</article>
+<article lang="nl" data-lang="nl" hidden>
+<h1>Privacy</h1>
+<p class="date">Laatst bijgewerkt: 19 oktober 2026</p>
+<p>Peelabee is een creatieve app voor kinderen, gemaakt door Swiff. Op deze pagina leggen we eenvoudig uit welke gegevens de app gebruikt.</p>
+<h2>In het kort</h2>
+<ul>
+<li>Geen account, geen aanmelding, er wordt niet om een e-mailadres of naam gevraagd.</li>
+<li>Niets wat in de app gebeurt, wordt naar ons of naar een andere server gestuurd.</li>
+<li>In de app is er geen chat, geen berichtenfunctie en geen contact met andere gebruikers.</li>
+</ul>
+<h2>Wat op je apparaat blijft</h2>
+<p>Profielen (een profielnaam en het gekozen personage), ontwerpen, het album, de sterren en de ouderinstellingen worden alleen op je apparaat opgeslagen. Verwijder je de app, dan worden ook deze gegevens verwijderd. Met “Alles resetten” kun je op elk moment zelf alles wissen.</p>
+<h2>Back-ups, opslaan en delen</h2>
+<p>Een back-upbestand wordt alleen gemaakt als je daarom vraagt, op een plek op je apparaat die je zelf kiest. Of je een ontwerp als afbeelding of pdf opslaat en deelt, bepaal je helemaal zelf; daarvoor worden de gewone opslaan- en deelschermen van je apparaat gebruikt. Alleen het ontwerp dat jij kiest, wordt gedeeld.</p>
+<h2>Gesproken begeleiding</h2>
+<p>Beebee praat via de ingebouwde tekst-naar-spraakfunctie van je apparaat, in de taal van je apparaat.</p>
+<h2>Printen</h2>
+<p>Printen gaat via de printfunctie van je apparaat of via een printer die je zelf koppelt. Een ontwerp wordt alleen naar die printer gestuurd.</p>
+<h2>Deze website</h2>
+<p>peelabee.com gebruikt geen cookies, heeft geen formulieren en volgt bezoekers niet. Lettertypen en afbeeldingen worden van de site zelf geladen.</p>
+<h2>Contact</h2>
+<p>Vragen? Mail naar <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a></p>
+</article>
+<article lang="el" data-lang="el" hidden>
+<h1>Απόρρητο</h1>
+<p class="date">Τελευταία ενημέρωση: 19 Οκτωβρίου 2026</p>
+<p>Το Peelabee είναι μια εφαρμογή δημιουργικότητας για παιδιά από τη Swiff. Αυτή η σελίδα εξηγεί απλά ποιες πληροφορίες χρησιμοποιεί η εφαρμογή.</p>
+<h2>Με λίγα λόγια</h2>
+<ul>
+<li>Δεν υπάρχουν λογαριασμοί ούτε εγγραφή και δεν ζητείται διεύθυνση email ή όνομα.</li>
+<li>Τίποτα από όσα γίνονται στην εφαρμογή δεν στέλνεται σε εμάς ή σε οποιονδήποτε άλλο διακομιστή.</li>
+<li>Μέσα στην εφαρμογή δεν υπάρχει συνομιλία, ανταλλαγή μηνυμάτων ή επαφή με άλλους χρήστες.</li>
+</ul>
+<h2>Τι μένει στη συσκευή σας</h2>
+<p>Τα προφίλ (το όνομα του προφίλ και ο χαρακτήρας που επιλέχθηκε), τα σχέδια, το άλμπουμ, τα αστέρια και οι ρυθμίσεις γονέων αποθηκεύονται μόνο στη συσκευή σας. Αν διαγράψετε την εφαρμογή, διαγράφονται κι αυτά. Μπορείτε να τα σβήσετε όλα μόνοι σας οποιαδήποτε στιγμή με την επιλογή «Επαναφορά όλων».</p>
+<h2>Αντίγραφα ασφαλείας, αποθήκευση και κοινοποίηση</h2>
+<p>Ένα αρχείο αντιγράφου ασφαλείας αποθηκεύεται μόνο όταν το ζητήσετε, στο σημείο της συσκευής σας που επιλέγετε εσείς. Η αποθήκευση ενός σχεδίου ως εικόνα ή PDF και η κοινοποίησή του είναι αποκλειστικά δική σας απόφαση· γίνονται μέσα από τις οθόνες αποθήκευσης και κοινοποίησης της ίδιας της συσκευής σας. Το μόνο που κοινοποιείται είναι το σχέδιο που επιλέγετε.</p>
+<h2>Φωνητική καθοδήγηση</h2>
+<p>Η Beebee μιλά μέσω της ενσωματωμένης λειτουργίας μετατροπής κειμένου σε ομιλία της συσκευής σας, στη γλώσσα της συσκευής σας.</p>
+<h2>Εκτύπωση</h2>
+<p>Η εκτύπωση γίνεται μέσω της λειτουργίας εκτύπωσης της συσκευής σας ή ενός εκτυπωτή που συνδέετε εσείς. Το σχέδιο στέλνεται μόνο σε αυτόν τον εκτυπωτή.</p>
+<h2>Αυτός ο ιστότοπος</h2>
+<p>Το peelabee.com δεν χρησιμοποιεί cookies, δεν έχει φόρμες και δεν παρακολουθεί τους επισκέπτες. Οι γραμματοσειρές και οι εικόνες φορτώνονται από τον ίδιο τον ιστότοπο.</p>
+<h2>Επικοινωνία</h2>
+<p>Για ερωτήσεις: <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a></p>
+</article>
+<article lang="sq" data-lang="sq" hidden>
+<h1>Privatësia</h1>
+<p class="date">Përditësimi i fundit: 19 tetor 2026</p>
+<p>Peelabee është një aplikacion krijimtarie për fëmijë, i krijuar nga Swiff. Kjo faqe shpjegon thjesht se çfarë informacioni përdor aplikacioni.</p>
+<h2>Shkurtimisht</h2>
+<ul>
+<li>Nuk ka llogari, as regjistrim, dhe nuk kërkohet adresë emaili apo emër.</li>
+<li>Asgjë që bëhet në aplikacion nuk na dërgohet neve apo ndonjë serveri tjetër.</li>
+<li>Brenda aplikacionit nuk ka bisedë, mesazhe apo kontakt me përdorues të tjerë.</li>
+</ul>
+<h2>Çfarë mbetet në pajisjen tuaj</h2>
+<p>Profilet (emri i profilit dhe personazhi i zgjedhur), dizajnet, albumi, yjet dhe cilësimet e prindërve ruhen vetëm në pajisjen tuaj. Nëse fshini aplikacionin, fshihen edhe ato. Në çdo kohë mund t’i fshini vetë të gjitha me „Rivendos gjithçka“.</p>
+<h2>Kopjet rezervë, ruajtja dhe ndarja</h2>
+<p>Skedari i kopjes rezervë ruhet vetëm kur e kërkoni ju, në një vend të pajisjes që e zgjidhni vetë. Ruajtja e një dizajni si imazh ose PDF dhe ndarja e tij janë tërësisht vendim i juaji; për këtë përdoren ekranet e ruajtjes dhe të ndarjes së vetë pajisjes suaj. E vetmja gjë që ndahet është dizajni që zgjidhni ju.</p>
+<h2>Udhëzimi me zë</h2>
+<p>Beebee flet përmes funksionit të integruar të leximit me zë të pajisjes suaj, në gjuhën e pajisjes.</p>
+<h2>Printimi</h2>
+<p>Printimi bëhet me funksionin e printimit të pajisjes suaj ose me një printer që lidhni ju. Dizajni dërgohet vetëm te ai printer.</p>
+<h2>Kjo faqe interneti</h2>
+<p>peelabee.com nuk përdor cookies, nuk ka formularë dhe nuk ndjek vizitorët. Shkronjat dhe imazhet ngarkohen nga vetë faqja.</p>
+<h2>Kontakti</h2>
+<p>Për pyetje: <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a></p>
+</article>
+<article lang="ar" data-lang="ar" dir="rtl" hidden>
+<h1>الخصوصية</h1>
+<p class="date">آخر تحديث: 19 أكتوبر 2026</p>
+<p>Peelabee تطبيق إبداعي للأطفال من تطوير Swiff. تشرح هذه الصفحة ببساطة المعلومات التي يستخدمها التطبيق.</p>
+<h2>باختصار</h2>
+<ul>
+<li>لا حسابات ولا تسجيل، ولا نطلب بريدًا إلكترونيًا أو اسمًا.</li>
+<li>لا يُرسَل أي شيء مما يحدث داخل التطبيق إلينا أو إلى أي خادم آخر.</li>
+<li>لا توجد داخل التطبيق دردشة أو رسائل أو تواصل مع مستخدمين آخرين.</li>
+</ul>
+<h2>ما يبقى على جهازكم</h2>
+<p>تُخزَّن الملفات الشخصية (اسم الملف الشخصي والشخصية المختارة) والتصاميم والألبوم والنجوم وإعدادات الأهل على جهازكم فقط. وعند حذف التطبيق تُحذف هي أيضًا. ويمكنكم مسح كل شيء بأنفسكم في أي وقت عبر «إعادة ضبط كل شيء».</p>
+<h2>النسخ الاحتياطي والحفظ والمشاركة</h2>
+<p>لا يُحفظ ملف النسخة الاحتياطية إلا عندما تطلبون ذلك، وفي المكان الذي تختارونه على جهازكم. أما حفظ تصميم كصورة أو ملف PDF ومشاركته فقرار يعود إليكم وحدكم؛ ويتم ذلك عبر شاشات الحفظ والمشاركة الخاصة بجهازكم. والشيء الوحيد الذي تتم مشاركته هو التصميم الذي تختارونه.</p>
+<h2>الإرشاد الصوتي</h2>
+<p>تتحدث Beebee باستخدام ميزة تحويل النص إلى كلام المدمجة في جهازكم، وبلغة الجهاز.</p>
+<h2>الطباعة</h2>
+<p>تتم الطباعة عبر ميزة الطباعة في جهازكم أو عبر طابعة تقومون بتوصيلها. ولا يُرسَل التصميم إلا إلى تلك الطابعة.</p>
+<h2>هذا الموقع</h2>
+<p>لا يستخدم peelabee.com ملفات تعريف الارتباط (الكوكيز)، ولا يحتوي على نماذج، ولا يتتبع الزوار. وتُحمَّل الخطوط والصور من الموقع نفسه.</p>
+<h2>التواصل</h2>
+<p>للاستفسارات: <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a></p>
+</article>
+<article lang="fa" data-lang="fa" dir="rtl" hidden>
+<h1>حریم خصوصی</h1>
+<p class="date">آخرین به‌روزرسانی: ۱۹ اکتبر ۲۰۲۶</p>
+<p>Peelabee یک برنامهٔ خلاقیت برای کودکان است که Swiff آن را ساخته است. این صفحه به زبان ساده توضیح می‌دهد که برنامه از چه اطلاعاتی استفاده می‌کند.</p>
+<h2>به‌طور خلاصه</h2>
+<ul>
+<li>نه حساب کاربری در کار است و نه ثبت‌نام؛ نشانی ایمیل یا نام هم پرسیده نمی‌شود.</li>
+<li>هیچ‌یک از کارهایی که در برنامه انجام می‌شود، برای ما یا هیچ سرور دیگری فرستاده نمی‌شود.</li>
+<li>در برنامه هیچ چت، پیام‌رسانی یا ارتباطی با کاربران دیگر وجود ندارد.</li>
+</ul>
+<h2>چه چیزهایی روی دستگاه شما می‌ماند</h2>
+<p>پروفایل‌ها (نام پروفایل و شخصیت انتخاب‌شده)، طرح‌ها، آلبوم، ستاره‌ها و تنظیمات والدین فقط روی دستگاه شما ذخیره می‌شوند. با حذف برنامه، این‌ها هم پاک می‌شوند. هر زمان بخواهید می‌توانید خودتان با «بازنشانی همه‌چیز» همه را پاک کنید.</p>
+<h2>پشتیبان‌گیری، ذخیره و اشتراک‌گذاری</h2>
+<p>فایل پشتیبان فقط وقتی شما بخواهید و در جایی از دستگاهتان که خودتان انتخاب کنید، ذخیره می‌شود. ذخیرهٔ یک طرح به‌صورت تصویر یا PDF و اشتراک‌گذاری آن کاملاً به تصمیم شما بستگی دارد؛ این کار با صفحه‌های ذخیره و اشتراک‌گذاری خود دستگاهتان انجام می‌شود. تنها چیزی که به اشتراک گذاشته می‌شود، طرحی است که خودتان انتخاب می‌کنید.</p>
+<h2>راهنمای صوتی</h2>
+<p>Beebee با قابلیت داخلی تبدیل متن به گفتار دستگاه شما و به زبان دستگاهتان صحبت می‌کند.</p>
+<h2>چاپ</h2>
+<p>چاپ با قابلیت چاپ دستگاه شما یا چاپگری که خودتان وصل می‌کنید انجام می‌شود. طرح فقط به همان چاپگر فرستاده می‌شود.</p>
+<h2>این وب‌سایت</h2>
+<p>peelabee.com از کوکی استفاده نمی‌کند، فرمی ندارد و بازدیدکنندگان را ردیابی نمی‌کند. فونت‌ها و تصاویر از خود سایت بارگذاری می‌شوند.</p>
+<h2>تماس با ما</h2>
+<p>اگر سؤالی دارید: <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a></p>
+</article>
+<article lang="hi" data-lang="hi" hidden>
+<h1>गोपनीयता</h1>
+<p class="date">अंतिम अपडेट: 19 अक्टूबर 2026</p>
+<p>Peelabee, Swiff का बनाया हुआ बच्चों के लिए एक क्रिएटिविटी ऐप है। यह पेज आसान शब्दों में बताता है कि ऐप कौन-सी जानकारी इस्तेमाल करता है।</p>
+<h2>संक्षेप में</h2>
+<ul>
+<li>कोई अकाउंट नहीं, कोई साइन-अप नहीं, और ईमेल पता या नाम नहीं पूछा जाता।</li>
+<li>ऐप में किया गया कुछ भी हमें या किसी दूसरे सर्वर को नहीं भेजा जाता।</li>
+<li>ऐप के अंदर कोई चैट, मैसेजिंग या दूसरे यूज़र्स से संपर्क नहीं है।</li>
+</ul>
+<h2>आपके डिवाइस पर क्या रहता है</h2>
+<p>प्रोफ़ाइल (प्रोफ़ाइल का नाम और चुना गया किरदार), डिज़ाइन, एल्बम, सितारे और पैरेंट सेटिंग्स सिर्फ़ आपके डिवाइस पर सेव रहते हैं। ऐप डिलीट करने पर ये भी डिलीट हो जाते हैं। आप जब चाहें "सब कुछ रीसेट करें" से ख़ुद सब कुछ मिटा सकते हैं।</p>
+<h2>बैकअप, सेव करना और शेयर करना</h2>
+<p>बैकअप फ़ाइल सिर्फ़ तभी सेव होती है जब आप कहें, और आपके डिवाइस पर उसी जगह जिसे आप चुनें। किसी डिज़ाइन को इमेज या PDF के रूप में सेव करना और उसे शेयर करना पूरी तरह आपका फ़ैसला है; इसके लिए आपके डिवाइस की अपनी सेव और शेयर स्क्रीन इस्तेमाल होती हैं। शेयर सिर्फ़ वही डिज़ाइन होता है जिसे आप चुनते हैं।</p>
+<h2>आवाज़ से मार्गदर्शन</h2>
+<p>Beebee आपके डिवाइस के बिल्ट-इन टेक्स्ट-टू-स्पीच से, आपके डिवाइस की भाषा में बोलती है।</p>
+<h2>प्रिंटिंग</h2>
+<p>प्रिंटिंग आपके डिवाइस के प्रिंट फ़ीचर या आपके जोड़े गए प्रिंटर से होती है। डिज़ाइन सिर्फ़ उसी प्रिंटर को भेजा जाता है।</p>
+<h2>यह वेबसाइट</h2>
+<p>peelabee.com कुकीज़ का इस्तेमाल नहीं करती, इसमें कोई फ़ॉर्म नहीं है और यह विज़िटर्स को ट्रैक नहीं करती। फ़ॉन्ट और इमेज इसी साइट से लोड होते हैं।</p>
+<h2>संपर्क</h2>
+<p>सवालों के लिए: <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a></p>
+</article>
+<article lang="th" data-lang="th" hidden>
+<h1>ความเป็นส่วนตัว</h1>
+<p class="date">อัปเดตล่าสุด: 19 ตุลาคม 2569</p>
+<p>Peelabee เป็นแอปเสริมความคิดสร้างสรรค์สำหรับเด็กที่พัฒนาโดย Swiff หน้านี้อธิบายอย่างเข้าใจง่ายว่าแอปใช้ข้อมูลอะไรบ้าง</p>
+<h2>สรุปสั้น ๆ</h2>
+<ul>
+<li>ไม่มีบัญชี ไม่ต้องสมัคร และไม่ขออีเมลหรือชื่อ</li>
+<li>ทุกสิ่งที่ทำในแอปจะไม่ถูกส่งมาให้เราหรือเซิร์ฟเวอร์อื่นใด</li>
+<li>ภายในแอปไม่มีแชท การส่งข้อความ หรือการติดต่อกับผู้ใช้คนอื่น</li>
+</ul>
+<h2>สิ่งที่อยู่บนอุปกรณ์ของคุณ</h2>
+<p>โปรไฟล์ (ชื่อโปรไฟล์และตัวละครที่เลือก) ผลงานออกแบบ อัลบั้ม ดาว และการตั้งค่าของผู้ปกครอง จะเก็บไว้บนอุปกรณ์ของคุณเท่านั้น หากลบแอป ข้อมูลเหล่านี้ก็จะถูกลบไปด้วย คุณสามารถลบทุกอย่างได้เองทุกเมื่อด้วย "รีเซ็ตทั้งหมด"</p>
+<h2>การสำรองข้อมูล การบันทึก และการแชร์</h2>
+<p>ไฟล์สำรองจะถูกบันทึกเฉพาะเมื่อคุณสั่งเท่านั้น และบันทึกไว้ในตำแหน่งบนอุปกรณ์ที่คุณเลือก การบันทึกผลงานเป็นรูปภาพหรือ PDF และการแชร์เป็นการตัดสินใจของคุณทั้งหมด โดยใช้หน้าจอบันทึกและแชร์ของอุปกรณ์เอง สิ่งเดียวที่ถูกแชร์คือผลงานที่คุณเลือก</p>
+<h2>เสียงแนะนำ</h2>
+<p>Beebee พูดด้วยระบบแปลงข้อความเป็นเสียงที่มีอยู่ในอุปกรณ์ของคุณ ตามภาษาของอุปกรณ์</p>
+<h2>การพิมพ์</h2>
+<p>การพิมพ์ใช้ฟีเจอร์การพิมพ์ของอุปกรณ์หรือเครื่องพิมพ์ที่คุณเชื่อมต่อ ผลงานจะถูกส่งไปยังเครื่องพิมพ์นั้นเท่านั้น</p>
+<h2>เว็บไซต์นี้</h2>
+<p>peelabee.com ไม่ใช้คุกกี้ ไม่มีแบบฟอร์ม และไม่ติดตามผู้เข้าชม ฟอนต์และรูปภาพโหลดจากตัวเว็บไซต์เอง</p>
+<h2>ติดต่อ</h2>
+<p>หากมีคำถาม: <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a></p>
+</article>
+<article lang="id" data-lang="id" hidden>
+<h1>Privasi</h1>
+<p class="date">Terakhir diperbarui: 19 Oktober 2026</p>
+<p>Peelabee adalah aplikasi kreativitas untuk anak-anak buatan Swiff. Halaman ini menjelaskan dengan sederhana informasi apa saja yang digunakan aplikasi.</p>
+<h2>Singkatnya</h2>
+<ul>
+<li>Tidak ada akun, tidak ada pendaftaran, dan kami tidak menanyakan alamat email maupun nama.</li>
+<li>Apa pun yang dilakukan di aplikasi tidak dikirim kepada kami maupun ke server lain.</li>
+<li>Di dalam aplikasi tidak ada obrolan, pesan, atau kontak dengan pengguna lain.</li>
+</ul>
+<h2>Yang tetap di perangkat Anda</h2>
+<p>Profil (nama profil dan karakter yang dipilih), desain, album, bintang, dan pengaturan orang tua hanya disimpan di perangkat Anda. Jika aplikasi dihapus, semua itu ikut terhapus. Anda juga bisa menghapus semuanya sendiri kapan saja melalui "Atur ulang semuanya".</p>
+<h2>Cadangan, penyimpanan, dan berbagi</h2>
+<p>File cadangan hanya disimpan saat Anda memintanya, di lokasi pada perangkat Anda yang Anda pilih. Menyimpan desain sebagai gambar atau PDF, lalu membagikannya, sepenuhnya keputusan Anda; proses ini menggunakan layar simpan dan bagikan bawaan perangkat Anda. Yang dibagikan hanyalah desain yang Anda pilih.</p>
+<h2>Panduan suara</h2>
+<p>Beebee berbicara menggunakan fitur teks-ke-suara bawaan perangkat Anda, dalam bahasa perangkat Anda.</p>
+<h2>Mencetak</h2>
+<p>Pencetakan menggunakan fitur cetak perangkat Anda atau printer yang Anda sambungkan. Desain hanya dikirim ke printer tersebut.</p>
+<h2>Situs web ini</h2>
+<p>peelabee.com tidak menggunakan cookie, tidak memiliki formulir, dan tidak melacak pengunjung. Font dan gambar dimuat dari situs ini sendiri.</p>
+<h2>Kontak</h2>
+<p>Jika ada pertanyaan: <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a></p>
+</article>
+<article lang="vi" data-lang="vi" hidden>
+<h1>Quyền riêng tư</h1>
+<p class="date">Cập nhật lần cuối: ngày 19 tháng 10 năm 2026</p>
+<p>Peelabee là ứng dụng sáng tạo dành cho trẻ em do Swiff phát triển. Trang này giải thích một cách dễ hiểu những thông tin mà ứng dụng sử dụng.</p>
+<h2>Tóm tắt</h2>
+<ul>
+<li>Không có tài khoản, không cần đăng ký, không hỏi địa chỉ email hay tên.</li>
+<li>Không có điều gì bạn làm trong ứng dụng được gửi đến chúng tôi hay bất kỳ máy chủ nào khác.</li>
+<li>Trong ứng dụng không có trò chuyện, nhắn tin hay liên lạc với người dùng khác.</li>
+</ul>
+<h2>Những gì ở lại trên thiết bị của bạn</h2>
+<p>Hồ sơ (tên hồ sơ và nhân vật đã chọn), thiết kế, album, ngôi sao và cài đặt phụ huynh chỉ được lưu trên thiết bị của bạn. Khi xóa ứng dụng, những dữ liệu này cũng bị xóa theo. Bạn có thể tự xóa toàn bộ bất cứ lúc nào bằng "Đặt lại mọi thứ".</p>
+<h2>Sao lưu, lưu và chia sẻ</h2>
+<p>Tệp sao lưu chỉ được lưu khi bạn yêu cầu, vào vị trí trên thiết bị do bạn chọn. Việc lưu thiết kế thành hình ảnh hoặc PDF và chia sẻ nó hoàn toàn do bạn quyết định; thao tác này dùng màn hình lưu và chia sẻ có sẵn của thiết bị. Thứ duy nhất được chia sẻ là thiết kế bạn chọn.</p>
+<h2>Hướng dẫn bằng giọng nói</h2>
+<p>Beebee nói bằng tính năng chuyển văn bản thành giọng nói có sẵn trên thiết bị của bạn, theo ngôn ngữ của thiết bị.</p>
+<h2>In ấn</h2>
+<p>Việc in sử dụng tính năng in của thiết bị hoặc máy in mà bạn kết nối. Thiết kế chỉ được gửi đến máy in đó.</p>
+<h2>Trang web này</h2>
+<p>peelabee.com không dùng cookie, không có biểu mẫu và không theo dõi khách truy cập. Phông chữ và hình ảnh được tải từ chính trang web.</p>
+<h2>Liên hệ</h2>
+<p>Nếu có câu hỏi: <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a></p>
+</article>
+<article lang="zh" data-lang="zh" hidden>
+<h1>隐私</h1>
+<p class="date">最后更新：2026年10月19日</p>
+<p>Peelabee 是 Swiff 为儿童打造的创意应用。本页用通俗易懂的语言，说明应用会使用哪些信息。</p>
+<h2>简而言之</h2>
+<ul>
+<li>无需账号，无需注册，不会询问电子邮箱地址或姓名。</li>
+<li>您在应用中的任何操作，都不会发送给我们或任何其他服务器。</li>
+<li>应用内没有聊天、消息功能，也无法与其他用户联系。</li>
+</ul>
+<h2>保存在您设备上的内容</h2>
+<p>档案（档案名称和所选角色）、设计、相册、星星和家长设置仅保存在您的设备上。删除应用后，这些内容也会一并删除。您也可以随时通过“全部重置”自行清除所有内容。</p>
+<h2>备份、保存和分享</h2>
+<p>只有在您要求时，备份文件才会保存到您在设备上选择的位置。是否将设计保存为图片或 PDF 并分享，完全由您决定；这一过程使用的是设备自带的保存和分享界面。被分享的只有您选择的设计。</p>
+<h2>语音引导</h2>
+<p>Beebee 使用您设备内置的文字转语音功能，以设备的语言说话。</p>
+<h2>打印</h2>
+<p>打印使用设备自带的打印功能或您连接的打印机。设计只会发送到该打印机。</p>
+<h2>本网站</h2>
+<p>peelabee.com 不使用 Cookie，没有表单，也不追踪访客。字体和图片均从本站加载。</p>
+<h2>联系我们</h2>
+<p>如有疑问，请联系： <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a></p>
+</article>
+<article lang="ja" data-lang="ja" hidden>
+<h1>プライバシー</h1>
+<p class="date">最終更新日：2026年10月19日</p>
+<p>Peelabeeは、Swiffが子ども向けに作った創造力アプリです。このページでは、アプリがどんな情報を使うのかをわかりやすく説明します。</p>
+<h2>かんたんにまとめると</h2>
+<ul>
+<li>アカウント作成や会員登録はなく、メールアドレスや名前をうかがうこともありません。</li>
+<li>アプリ内で行ったことは、私たちにも、ほかのどのサーバーにも送信されません。</li>
+<li>アプリ内には、チャットやメッセージ機能、ほかのユーザーと連絡をとる手段はありません。</li>
+</ul>
+<h2>端末に保存されるもの</h2>
+<p>プロフィール（プロフィール名と選んだキャラクター）、デザイン、アルバム、星、保護者設定は、お使いの端末にのみ保存されます。アプリを削除すると、これらも削除されます。「すべてリセット」から、いつでもご自身ですべて消去できます。</p>
+<h2>バックアップ、保存、共有</h2>
+<p>バックアップファイルは、ご希望のときにだけ、端末内のお好きな場所に保存されます。デザインを画像やPDFとして保存し、共有するかどうかは、すべてご自身の判断です。この操作には、端末に標準で備わっている保存・共有画面を使います。共有されるのは、選んだデザインだけです。</p>
+<h2>音声ガイド</h2>
+<p>Beebeeは、端末に内蔵された音声読み上げ機能を使い、端末の言語で話します。</p>
+<h2>印刷</h2>
+<p>印刷には、端末の印刷機能か、ご自身で接続したプリンターを使います。デザインはそのプリンターにだけ送信されます。</p>
+<h2>このウェブサイト</h2>
+<p>peelabee.comはCookieを使用せず、フォームもなく、訪問者の追跡も行いません。フォントと画像は、このサイト自体から読み込まれます。</p>
+<h2>お問い合わせ</h2>
+<p>ご質問は： <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a></p>
+</article>
+<article lang="ko" data-lang="ko" hidden>
+<h1>개인정보 보호</h1>
+<p class="date">최종 업데이트: 2026년 10월 19일</p>
+<p>Peelabee는 Swiff가 만든 어린이용 창의력 앱입니다. 이 페이지에서는 앱이 어떤 정보를 사용하는지 알기 쉽게 설명합니다.</p>
+<h2>요약</h2>
+<ul>
+<li>계정도, 회원가입도 없으며 이메일 주소나 이름을 묻지 않습니다.</li>
+<li>앱에서 하는 어떤 활동도 저희나 다른 서버로 전송되지 않습니다.</li>
+<li>앱 안에는 채팅, 메시지, 다른 사용자와 연락하는 기능이 없습니다.</li>
+</ul>
+<h2>기기에 남는 정보</h2>
+<p>프로필(프로필 이름과 선택한 캐릭터), 디자인, 앨범, 별, 부모 설정은 오직 사용자의 기기에만 저장됩니다. 앱을 삭제하면 이 정보도 함께 삭제됩니다. 언제든지 ‘모두 초기화’로 직접 모든 데이터를 지울 수 있습니다.</p>
+<h2>백업, 저장 및 공유</h2>
+<p>백업 파일은 요청하실 때에만, 기기에서 직접 선택한 위치에 저장됩니다. 디자인을 이미지나 PDF로 저장하고 공유하는 것은 전적으로 보호자의 결정이며, 이때 기기 자체의 저장 및 공유 화면을 사용합니다. 공유되는 것은 선택하신 디자인뿐입니다.</p>
+<h2>음성 안내</h2>
+<p>Beebee는 기기에 내장된 텍스트 음성 변환 기능을 사용해 기기의 언어로 말합니다.</p>
+<h2>인쇄</h2>
+<p>인쇄는 기기의 인쇄 기능이나 직접 연결한 프린터를 통해 이루어집니다. 디자인은 해당 프린터로만 전송됩니다.</p>
+<h2>이 웹사이트</h2>
+<p>peelabee.com은 쿠키를 사용하지 않고, 입력 양식이 없으며, 방문자를 추적하지 않습니다. 글꼴과 이미지는 사이트 자체에서 불러옵니다.</p>
+<h2>문의</h2>
+<p>문의 사항: <a href="mailto:info@swiff.com.tr">info@swiff.com.tr</a></p>
+</article>
+
 </div>
 <script>
-function setLang(l){document.documentElement.lang=l;document.querySelectorAll('article').forEach(a=>a.hidden=a.dataset.lang!==l);document.querySelectorAll('nav button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===l));document.title=l==='en'?'Peelabee — Privacy':'Peelabee — Gizlilik';try{localStorage.setItem('pb-lang',l)}catch(e){}}
-document.querySelectorAll('nav button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.l)));
-let p=null;try{p=localStorage.getItem('pb-lang')}catch(e){}
-setLang(p||((navigator.language||'').toLowerCase().startsWith('tr')?'tr':'en'));
+const PT={"en": "Peelabee — Privacy", "de": "Peelabee — Datenschutz", "fr": "Peelabee — Confidentialité", "es": "Peelabee — Privacidad", "it": "Peelabee — Privacy", "pt": "Peelabee — Privacidade", "ru": "Peelabee — Конфиденциальность", "uk": "Peelabee — Конфіденційність", "pl": "Peelabee — Prywatność", "ro": "Peelabee — Confidențialitate", "nl": "Peelabee — Privacy", "el": "Peelabee — Απόρρητο", "sq": "Peelabee — Privatësia", "ar": "Peelabee — الخصوصية", "fa": "Peelabee — حریم خصوصی", "hi": "Peelabee — गोपनीयता", "th": "Peelabee — ความเป็นส่วนตัว", "id": "Peelabee — Privasi", "vi": "Peelabee — Quyền riêng tư", "zh": "Peelabee — 隐私", "ja": "Peelabee — プライバシー", "ko": "Peelabee — 개인정보 보호", "tr": "Peelabee — Gizlilik"}, RTL={ar:1,fa:1};
+function setLang(l){ if(!PT[l]) l="en"; document.documentElement.lang=l; document.documentElement.dir=RTL[l]?"rtl":"ltr"; document.querySelectorAll("article").forEach(a=>a.hidden=a.dataset.lang!==l); document.title=PT[l]; const sel=document.getElementById("langSel"); if(sel) sel.value=l; try{localStorage.setItem("pb-lang",l)}catch(e){} }
+document.getElementById("langSel").addEventListener("change",e=>setLang(e.target.value));
+function detect(){ const ls=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||"en"]); for(const x of ls){ const k=String(x).toLowerCase().split(/[-_]/)[0]; if(PT[k]) return k; } return "en"; }
+let p=null;try{p=localStorage.getItem("pb-lang")}catch(e){}
+setLang(p&&PT[p]?p:detect());
 </script>
 </body>
 </html>
